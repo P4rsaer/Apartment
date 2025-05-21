@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- inps div -->
+
+    <div class="inps">
+      <input type="text" id="wprice" />
+      <input type="text" id="gprice" />
+      <input type="text" id="eprice" />
+    </div>
+
+    <!-- ends of inps div -->
+
+    <!-- btns div -->
+
+    <div class="btns">
+      <button onclick="tr()" class="wbtn">Click Me</button>
+
+      <button onclick="tr1()" class="gbtn">Click Me</button>
+
+      <button onclick="tr2()" class="ebtn">Click Me</button>
+    </div>
+
+    <!-- ends of btns div -->
+
+    <div class="container">
+      <table>
+        <tr>
+          <th>شماره واحد</th>
+          <th id="water_price">
+            <span class="flex_water">
+              <img src="assets/img/water.png" alt="" class="imgwater" />
+              هزینه آب بها
+            </span>
+          </th>
+
+          <th id="gas_price">
+            <span class="flex-gas">
+              <img src="assets/img/gas.png" alt="" class="img_gas" />
+              هزینه گاز
+            </span>
+          </th>
+          <th id="elec_price">
+            <span class="flex_elec">
+              <img
+                src="assets/img/electrisity.png"
+                alt=""
+                class="img_electrisity"
+              />
+              هزینه برق
+            </span>
+          </th>
+        </tr>
+
+        <tr>
+          <td>Unit 1 => 2 P</td>
+          <td id="waterU1">water</td>
+          <td id="gasU1">gas</td>
+          <td id="elecU1">power</td>
+        </tr>
+
+        <tr>
+          <td>Unit 2 => 4 P</td>
+          <td id="waterU2">water</td>
+          <td id="gasU2">gas</td>
+          <td id="elecU2">power</td>
+        </tr>
+
+        <tr>
+          <td>Unit 3 => belongs to Unit 1</td>
+          <td id="waterU3">water</td>
+          <td id="gasU3">gas</td>
+          <td id="elecU3">power</td>
+        </tr>
+
+        <tr>
+          <td>Unit 4 => 3 P</td>
+          <td id="waterU4">water</td>
+          <td id="gasU4">gas</td>
+          <td id="elecU4">power</td>
+        </tr>
+
+        <tr>
+          <td>Unit 5 => 0</td>
+          <td id="waterU5">water</td>
+          <td id="gasU5">gas</td>
+          <td id="elecU5">power</td>
+        </tr>
+        <tr>
+          <td>Unit 6 => 1 P</td>
+          <td id="waterU6">water</td>
+          <td id="gasU6">gas</td>
+          <td id="elecU6">power</td>
+        </tr>
+        <tr>
+          <td>Unit 7 => 2 P</td>
+          <td id="waterU7">water</td>
+          <td id="gasU7">gas</td>
+          <td id="elecU7">power</td>
+        </tr>
+        <tr>
+          <td>Unit 8 => 2 P</td>
+          <td id="waterU8">water</td>
+          <td id="gasU8">gas</td>
+          <td id="elecU8">power</td>
+        </tr>
+      </table>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

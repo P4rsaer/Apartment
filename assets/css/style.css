@@ -1,0 +1,337 @@
+body {
+  background-color: #f8e7f6;
+}
+
+/* css reset shod :) merci azin ke ostadami hamid jan */
+
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+body {
+  /* 4. Add accessible line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/* 7. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+/*
+    10. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* css starts here */
+
+table {
+  border-collapse: collapse;
+}
+
+th {
+  border: 4px solid black;
+  height: 55px;
+  width: 250px;
+  text-align: start;
+  padding-right: 5px;
+}
+
+td {
+  border: 4px solid black;
+  height: 55px;
+  width: 250px;
+  padding-right: 5px;
+}
+
+.container {
+  width: 100%;
+  height: 550px;
+  /* background-color: yellowgreen; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+
+/* imgs css is here */
+
+.img_gas {
+  width: 55px;
+  height: 45px;
+}
+
+.imgwater {
+  width: 55px;
+  height: 45px;
+}
+
+.img_electrisity {
+  width: 55px;
+  height: 45px;
+}
+
+/* img ends here  */
+
+/* water price col border */
+
+#water_price {
+  border: 3px solid blue;
+}
+
+#waterU1 {
+  border: 3px solid blue;
+}
+#waterU2 {
+  border: 3px solid blue;
+}
+#waterU3 {
+  border: 3px solid blue;
+}
+#waterU4 {
+  border: 3px solid blue;
+}
+#waterU5 {
+  border: 3px solid blue;
+}
+#waterU6 {
+  border: 3px solid blue;
+}
+#waterU7 {
+  border: 3px solid blue;
+}
+#waterU8 {
+  border: 3px solid blue;
+}
+
+/* water price column border ends */
+
+/* main css */
+
+.inps {
+  width: 100%;
+  height: 250px;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* inputs css */
+
+#wprice {
+  height: 45px;
+  width: 250px;
+  border-radius: 10px;
+  border: 4px solid blue;
+}
+
+#gprice {
+  height: 45px;
+  width: 250px;
+  border: 4px solid purple;
+  border-radius: 10px;
+}
+
+#eprice {
+  height: 45px;
+  width: 250px;
+  border: 4px solid orange;
+  border-radius: 10px;
+}
+
+/* main css up to here */
+
+/* gas & water & electrisity css starts here */
+
+.flex-gas {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.flex_water {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.flex_elec {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* gas column border starts here */
+
+#gas_price {
+  border: 3px solid purple;
+}
+
+#gasU1 {
+  border: 3px solid purple;
+}
+#gasU2 {
+  border: 3px solid purple;
+}
+#gasU3 {
+  border: 3px solid purple;
+}
+#gasU4 {
+  border: 3px solid purple;
+}
+#gasU5 {
+  border: 3px solid purple;
+}
+#gasU6 {
+  border: 3px solid purple;
+}
+#gasU7 {
+  border: 3px solid purple;
+}
+#gasU8 {
+  border: 3px solid purple;
+}
+
+/* gas column ending here */
+
+/* elec column border  starts here */
+
+#elec_price {
+  border: 3px solid orange;
+}
+
+#elecU1 {
+  border: 3px solid orange;
+}
+#elecU2 {
+  border: 3px solid orange;
+}
+#elecU3 {
+  border: 3px solid orange;
+}
+#elecU4 {
+  border: 3px solid orange;
+}
+#elecU5 {
+  border: 3px solid orange;
+}
+#elecU6 {
+  border: 3px solid orange;
+}
+#elecU7 {
+  border: 3px solid orange;
+}
+
+#elecU8 {
+  border: 3px solid orange;
+}
+
+/* elec column border  endings here */
+
+/* btns css starts here */
+
+.wbtn {
+  height: 40px;
+  width: 150px;
+  border: 3px solid blue;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.wbtn:hover {
+  background-color: blue;
+  color: white;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.gbtn {
+  height: 40px;
+  width: 150px;
+  border: 3px solid purple;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.gbtn:hover {
+  background-color: purple;
+  color: white;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.ebtn {
+  height: 40px;
+  width: 150px;
+  border: 3px solid orange;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.ebtn:hover {
+  background-color: orange;
+  color: white;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.btns {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
